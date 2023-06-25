@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="台湾の観光スポットをご紹介。台北・台中・台南の観光名所やグルメが盛りだくさん！">
+  <title>台湾観光 | 台南</title>
+  <link rel="icon" href="images/icontaiwan.ico">
+  <link rel="stylesheet" href="css/vendors/reset.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/tainan.css">
+</head>
+
+<body id="body">
+  <div id="loader">
+    <img src="images/mobile-logo.svg" alt="ロゴ" />
+  </div>
+  <div id="global-container">
+    <section class="modal1">
+      <div class="modal1__cover"></div>
+      <button class="modal1__close" tabindex="-1">
+        <span></span>
+        <span></span>
+      </button>
+    <figure class="modal1__img">
+        <img src="images/gourmet1.jpg" alt="タンツーメン">
+      </figure>
+    </section>
+    <section class="modal2">
+      <div class="modal2__cover"></div>
+      <button class="modal2__close" tabindex="-1">
+        <span></span>
+        <span></span>
+      </button>
+    <figure class="modal2__img">
+        <img src="images/gourmet2.jpg" alt="エビ飯">
+      </figure>
+    </section>
+    <section class="modal3">
+      <div class="modal3__cover"></div>
+      <button class="modal3__close" tabindex="-1">
+        <span></span>
+        <span></span>
+      </button>
+    <figure class="modal3__img">
+        <img src="images/gourmet3.jpg" alt="小籠包">
+      </figure>
+    </section>
+    <section class="modal4">
+      <div class="modal4__cover"></div>
+      <button class="modal4__close" tabindex="-1">
+        <span></span>
+        <span></span>
+      </button>
+    <figure class="modal4__img">
+        <img src="images/gourmet4.jpg" alt="鴨肉飯">
+      </figure>
+    </section>
+    <div class="nav-trigger"></div>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__inner__logo">
+          <a href="../top/index.html"><img src="images/mobile-logo.svg" alt="ロゴ" /></a>
+        </div>
+        <nav class="header__inner__nav">
+          <ul>
+            <li><a href="../top/index.html">TOP</a></li>
+            <li><a href="../taipei/index.html">台北</a></li>
+            <li><a href="../taichung/index.html">台中</a></li>
+            <li><a href="index.html">台南</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu__open-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-menu" role="dialog" aria-modal="true" aria-label="dialog-title"
+      aria-describedby="dialog-description">
+      <h2 class="mobile-menu__title" id="dialog-title">モバイル用メニュー</h2>
+      <p class="mobile-menu__description" id="dialog-description">各ページやSNSのリンクを利用できます</p>
+      <ul class="mobile-menu__content">
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="../top/index.html" tabindex="-1">TOP</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="../taipei/index.html" tabindex="-1">台北</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="../taichung/index.html" tabindex="-1">台中</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="index.html" tabindex="-1">台南</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="#" tabindex="-1">お問い合わせ</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a href="../top/index.html" class="mobile-menu__content__item__link" tabindex="-1"><img
+              src="images/mobile-logo.svg" alt="ロゴ" />
+          </a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a href="" class="mobile-menu__content__item__link" tabindex="-1"><img src="images/facebook.svg"
+              alt="フェイスブック" /></a>
+          <a href="" class="mobile-menu__content__item__link" tabindex="-1"><img src="images/instagram.svg"
+              alt="インスタグラム" /></a>
+          <a href="" class="mobile-menu__content__item__link" tabindex="-1"><img src="images/twitter.svg"
+              alt="ツイッター" /></a>
+        </li>
+      </ul>
+      <button class="mobile-menu__close-btn" tabindex="-1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <section class="hero">
+      <div class="hero__inner">
+        <img src="images/hero-title.svg" alt="台北" class="hero__inner__title" />
+        <div class="hero__inner__description">
+          台湾の古都「台南」台南はお寺などの史跡巡りや、リノベエリアの散策が楽しめる、新旧の魅力が交わる街です。
+        </div>
+        <picture class="hero__inner__scroll">
+          <source srcset="images/scroll-pc.svg" media="(min-width: 767px)" type="image/svg" />
+          <img src="images/scroll-sp.svg" alt="スクロール">
+        </picture>
+      </div>
+    </section>
+    <section class="breadcrumb">
+      <div class="breadcrumb__inner">
+        <ul class="breadcrumb__list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="../top/index.html"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li class="breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">台南</span></a>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="attraction">
+      <div class="attraction__inner">
+        <div class="attraction__inner__title">
+          Attraction<span>観光名所</span>
+        </div>
+        <div class="attraction__inner__item1">
+          <figure class="attraction__inner__item1__img">
+            <img src="images/yanping1-sp.jpg" alt="安平老街1" />
+          </figure>
+          <div class="attraction__inner__item1__text">
+            「台湾の京都」の異名をとる、古都・台南、かつて台湾の首都であったことから、重要な史跡が点在し、ノスタルジックなムードが漂っています。17世紀に造られた台湾最古の街は、、現在台湾レトロとも称され数々の掘り出し物やお土産、飲食店が立ち並びインスタ映えする写真スポットとしても人気の高いエリアになっています。
+          </div>
+        </div>
+        <div class="attraction__inner__item2">
+          <div class="attraction__inner__item2__img-wrapper">
+            <div class="attraction__inner__item2__img-wrapper__content1">
+              <img src="images/yanping2-sp.jpg" alt="安平老街2" />
+            </div>
+            <div class="attraction__inner__item2__img-wrapper__content2">
+              <img src="images/yanping3-sp.jpg" alt="安平老街3" />
+              <img src="images/yanping4-sp.jpg" alt="安平老街4" />
+            </div>
+          </div>
+          <div class="attraction__inner__item2__text">
+            露店巡りは日中ノスタルジックな<br>撮影は夜がおすすめ
+          </div>
+        </div>
+        <span class="attraction__inner__border"></span>
+        <div class="attraction__inner__item3">
+          <figure class="attraction__inner__item3__img">
+            <picture>
+              <source srcset="images/chihkan1-pc.jpg" media="(min-width: 767px)" type="image/jpg" />
+              <img src="images/chihkan1-sp.jpg" alt="赤嵌楼-1" />
+            </picture>
+          </figure>
+          <div class="attraction__inner__item3__text">
+            赤嵌楼（赤嵌樓）は台南中西区の代表的な古跡で、安平区の安平古堡と並んで台南の二大古跡になっています夜になると、赤嵌楼周辺には黄色いライトが灯り、古い建築物をより一層味わい深く演出します。前方の広場ではよく音楽会が催され、台南市民の夜の憩いの場になっています。赤嵌楼は、昼も夜も独特の魅力で楽しませてくれます。
+          </div>
+        </div>
+        <div class="attraction__inner__item4">
+          <div class="attraction__inner__item4__img-wrapper">
+            <img src="images/chihkan2-sp.jpg" class="attraction__inner__item4__img-wrapper__img" alt="赤嵌楼-2" />
+            <img src="images/chihkan4-sp.jpg" class="attraction__inner__item4__img-wrapper__img" alt="赤嵌楼-4" />
+          </div>
+          <div class="attraction__inner__item4__text">
+            遅い時間帯はライトアップも楽しめます<br><span>営業時間　8:30 – 21:30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gourmet">
+      <div class="gourmet__inner">
+        <div class="gourmet__inner__title">
+          Gourmet<span>おすすめグルメ</span>
+        </div>
+        <h3 class="gourmet__inner__comment">グルメが有名な台湾において特に有名であり、台南でしか味わえないものをご紹介
+        </h3>
+        <div class="gourmet__inner__border"></div>
+        <div class="gourmet__inner__gourmet1">
+          <div class="gourmet__inner__gourmet1__imgbox1">
+            <img src="images/pc1.jpg" alt="" class="gourmet__inner__gourmet1__imgbox1__pcimg">
+          <button><img src="images/gourmet1.jpg" alt="タンツーメン" class="gourmet__inner__gourmet1__imgbox1__img modal1__trigger"></button>
+          </div>
+          <div class="gourmet__inner__gourmet1__introduction1">
+            <p class="gourmet__inner__gourmet1__introduction1__p1">度小月</p>
+            <p class="gourmet__inner__gourmet1__introduction1__p2">担仔麺</p>
+            <p class="gourmet__inner__gourmet1__introduction1__p3">タンツーメン</p>
+            <p class="gourmet__inner__gourmet1__introduction1__text">
+              日本の台湾ラーメンの元祖とも言われる食べ物「度小月」は各地に支店を持つ人気店台南ではその度小月本店があり大人気。
+            </p>
+          </div>
+        </div>
+        <div class="gourmet__inner__gourmet2">
+          <div class="gourmet__inner__gourmet2__imgbox2">
+            <img src="images/pc2.jpg" alt="" class="gourmet__inner__gourmet2__imgbox2__pcimg">
+            <button><img src="images/gourmet2.jpg" alt="エビ飯" class="gourmet__inner__gourmet2__imgbox2__img modal2__trigger"></button>
+          </div>
+          <div class="gourmet__inner__gourmet2__introduction2">
+            <p class="gourmet__inner__gourmet2__introduction2__p1">矮仔成</p>
+            <p class="gourmet__inner__gourmet2__introduction2__p2">蝦仁飯</p>
+            <p class="gourmet__inner__gourmet2__introduction2__p3">エビ飯</p>
+            <p class="gourmet__inner__gourmet2__introduction2__text">台南10大美食にも選ばれている代表料理中でも有名なのが「矮仔成」台南に来ないと味わない絶品</p>
+          </div>
+        </div>
+        <div class="gourmet__inner__gourmet3">
+          <div class="gourmet__inner__gourmet3__imgbox3">
+            <img src="images/pc3.jpg" alt="" class="gourmet__inner__gourmet3__imgbox3__pcimg">
+          <button><img src="images/gourmet3.jpg" alt="小籠包" class="gourmet__inner__gourmet3__imgbox3__img  modal3__trigger"></button>
+          </div>
+          <div class="gourmet__inner__gourmet3__introduction3">
+            <p class="gourmet__inner__gourmet3__introduction3__p1">上海華都小吃</p>
+            <p class="gourmet__inner__gourmet3__introduction3__p2">小籠包</p>
+            <p class="gourmet__inner__gourmet3__introduction3__p3">ショウロンポー</p>
+            <p class="gourmet__inner__gourmet3__introduction3__text">ミシュラン掲載実績や台湾政府から表彰をもらっている元祖「松針小籠包」の誕生地は、台南のこのお店
+            </p>
+          </div>
+        </div>
+        <div class="gourmet__inner__gourmet4">
+          <div class="gourmet__inner__gourmet4__imgbox4">
+            <img src="images/pc4.jpg" alt="" class="gourmet__inner__gourmet4__imgbox4__pcimg">
+          <button><img src="images/gourmet4.jpg" alt="鴨肉飯" class="gourmet__inner__gourmet4__imgbox4__img modal4__trigger"></button>
+          </div>
+          <div class="gourmet__inner__gourmet4__introduction4">
+            <p class="gourmet__inner__gourmet4__introduction4__p1">亞德當歸鴨</p>
+            <p class="gourmet__inner__gourmet4__introduction4__p2">鴨肉飯</p>
+            <p class="gourmet__inner__gourmet4__introduction4__p3">ヤーロウファン</p>
+            <p class="gourmet__inner__gourmet4__introduction4__text">小吃（シャオチー）と呼ばれる台湾の軽食文化、その中でも人気な一品が鴨肉飯やすい・はやい・うまいの原点
+            </p>
+          </div>
+        </div>
+        <div class="gourmet__inner__border"></div>
+      </div>
+    </section>
+    <section class="pick-up">
+      <div class="pick-up__inner">
+        <div class="pick-up__inner__title">
+          Pick Up<span>ピックアップ</span>
+        </div>
+        <div class="pick-up__inner__wrapper1">
+          <div class="pick-up__inner__wrapper1__main-text">蓮と温泉の国<span>　白河</span></div>
+          <div class="pick-up__inner__wrapper1__sub-text">
+            きらびやかな都心や歴史情緒ある台湾そんな台湾のもう一つの楽しみ方が自然に囲まれ名がらの観光観光客の少ない所でゆっくり楽しみたい方におすすめ</div>
+          <figure class="pick-up__inner__wrapper1__img"><img src="images/pickup1-sp.jpg" alt="白河-温泉"></figure>
+        </div>
+        <div class="pick-up__inner__wrapper">
+          <div class="pick-up__inner__wrapper2">
+            <div class="pick-up__inner__wrapper2__text1">
+              温泉名関仔嶺温泉（グァンズーリン・ウェンチュエン）台湾4大温泉地の一つで白河周辺には数々のホテルがあり、温泉を楽しむことができます。このエリアは泥温泉が有名で国内外問わず女性に大人気</div>
+            <figure class="pick-up__inner__wrapper2__img-wrapper1">
+              <img src="images/pickup2-sp.jpg" alt="ホテル１">
+              <img src="images/pickup3-sp.jpg" alt="ホテル2">
+              <img src="images/pickup4-sp.jpg" alt="ホテル3">
+            </figure>
+            <div class="pick-up__inner__wrapper2__text2">温泉宿は最新のホテルから老舗の旅館まで多種多様に揃っています</div>
+            <div class="pick-up__inner__wrapper2__text3">
+              温泉宿は最新のホテルから老舗の旅館が選べ、特長として客室でも温泉が楽しめます。大型のスパリゾートもあり一日中お楽しみいただけます。</div>
+            <div class="pick-up__inner__wrapper2__img-wrapper2">
+              <img src="images/pickup5-sp.jpg" alt="蓮1">
+              <img src="images/pickup6-sp.jpg" alt="蓮2">
+            </div>
+            <div class="pick-up__inner__wrapper2__text4">蓮の実の生産で台湾全土の3分の2の生産量を占める「蓮のふるさと」美しい白河で癒しの時間をお過ごしください</div>
+            <figure class="pick-up__inner__wrapper2__img-wrapper3">
+              <img src="images/pickup7-sp.jpg" alt="3">
+            </figure>
+            <div class="pick-up__inner__wrapper2__text5">蓮の実の生産で台湾全土の3分の2の生産量を占める「蓮のふるさと」美しい白河で癒しの時間をお過ごしください</div>
+          </div>
+          <div class="pick-up__inner__wrapper3">
+            <img src="images/pickup8-pc.jpg" alt="白河">
+            <img src="images/pickup9-pc.jpg" alt="蓮4">
+            <img src="images/pickup10-pc.jpg" alt="蓮5">
+          </div>
+        </div>
+        <span class="pick-up__inner__border"></span>
+        <div class="pick-up__inner__btn">お問い合わせはこちら</div>
+      </div>
+    </section>
+    <button class="page-top-btn">
+      <img src="images/page-top-sp.svg" alt="ページトップボタン" />
+    </button>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="../top/index.html"><img src="images/mobile-logo.svg" alt="ロゴ" /></a>
+      </div>
+      <div class="footer__sns">
+        <img src="images/facebook.svg" alt="フェイスブック" />
+        <img src="images/instagram.svg" alt="インスタグラム" />
+        <img src="images/twitter.svg" alt="ツイッター" />
+      </div>
+      <div class="footer__copyright">Copyright (C) 2023 TAIWAN</div>
+    </footer>
+  </div>
+  <script src="../common/js/libs/modal.js"></script>
+  <script src="../common/js/libs/page-top-btn.js"></script>
+  <script src="../common/js/libs/scroll.js"></script>
+  <script src="../common/js/libs/mobile-menu-drop.js"></script>
+  <script src="js/tainan.js" defer></script>
+</body>
+
+</html>

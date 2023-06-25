@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* メディクエリ用Mixin */
+.sectiion__inner__title {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  line-height: 35px;
+}
+@media screen and (min-width: 767px) {
+  .sectiion__inner__title {
+    padding-top: 20px;
+    padding-right: 130px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: right;
+  }
+}
+.sectiion__inner__title span {
+  display: block;
+  font-size: 16px;
+}
+@media screen and (min-width: 767px) {
+  .sectiion__inner__title span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: 20px;
+  }
+}
+.sectiion__inner__title::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 259px;
+  height: 54px;
+  background-image: url(../images/title.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 51px;
+  right: 0px;
+  right: 50%;
+  transform: translateX(46.8%);
+}
+@media screen and (min-width: 767px) {
+  .sectiion__inner__title::before {
+    background-image: url(../images/title-pc.svg);
+    width: 668px;
+    height: 134.24px;
+    top: 35px;
+    right: 24%;
+  }
+}/*# sourceMappingURL=common.css.map */

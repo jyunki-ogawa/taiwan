@@ -1,0 +1,82 @@
+/* メディクエリ用Mixin */
+$breakpoints: (
+  // 480px以上(スマホの横向き)のモニタで適用
+  'sm': 'screen and (min-width: 480px)',
+  // 767px以上のタブレットやモニタで適用
+  'md': 'screen and (min-width: 767px)',
+  // 960px以上のモニタで適用
+  'lg': 'screen and (min-width: 960px)',
+  // 1280px以上のモニタで適用
+  'xl': 'screen and (min-width: 1280px)',
+  ) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//共用のタイトル部分（sample.htmlから該当部分をコピーして使用してください）
+// クラス名のsectionは自身のクラス名に変更してください
+// 画像のパスは自身のフォルダの構成に合わせて変更してください
+// positionなどの位置は適宜変更してください
+.sectiion {
+
+  &__inner {
+
+    &__title {
+      padding-top: 10px;
+      text-align: center;
+      font-size: 24px;
+      position: relative;
+      line-height: 35px;
+
+      @include mq(md) {
+        padding-top: 20px;
+        padding-right: 130px;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 70px;
+        text-align: right;
+      }
+
+      & span {
+        display: block;
+        font-size: 16px;
+
+        @include mq(md) {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 35px;
+          margin-left: 20px;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 259px;
+        height: 54px;
+        background-image: url(../images/title.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 51px;
+        right: 0px;
+        right: 50%;
+        transform: translateX(46.8%
+        );
+
+      @include mq(md) {
+        background-image: url(../images/title-pc.svg);
+        width: 668px;
+        height: 134.24px;
+        top: 35px;
+        right: 24%;
+      }
+    }
+  }
+}
+}

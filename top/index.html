@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="台湾の観光スポットをご紹介。台北・台中・台南の観光名所やグルメが盛りだくさん！">
+  <title>台湾観光</title>
+  <link rel="icon" href="images/icontaiwan.ico">
+  <link rel="stylesheet" href="../common/css/vendors/reset.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/top.css" />
+</head>
+
+<body id="body">
+  <div id="loader">
+    <img src="images/mobile-logo.svg" alt="ロゴ" />
+  </div>
+  <div id="global-container">
+    <div class="nav-trigger"></div>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__inner__logo">
+          <a href="../top/index.html"><img src="images/mobile-logo.svg" alt="ロゴ" /></a>
+        </div>
+        <nav class="header__inner__nav">
+          <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="../taipei/index.html">台北</a></li>
+            <li><a href="../taichung/index.html">台中</a></li>
+            <li><a href="../tainan/index.html">台南</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu__open-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-menu" role="dialog" aria-modal="true" aria-label="dialog-title"
+      aria-describedby="dialog-description">
+      <h2 class="mobile-menu__title" id="dialog-title">モバイル用メニュー</h2>
+      <p class="mobile-menu__description" id="dialog-description">各ページやSNSのリンクを利用できます</p>
+      <ul class="mobile-menu__content">
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="index.html" tabindex="-1">TOP</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="../taipei/index.html" tabindex="-1">台北</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="../taichung/index.html" tabindex="-1">台中</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="../tainan/index.html" tabindex="-1">台南</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a class="mobile-menu__content__item__link" href="#" tabindex="-1">お問い合わせ</a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a href="../top/index.html" class="mobile-menu__content__item__link" tabindex="-1"><img
+              src="images/mobile-logo.svg" alt="ロゴ" />
+          </a>
+        </li>
+        <li class="mobile-menu__content__item">
+          <a href="" class="mobile-menu__content__item__link" tabindex="-1"><img src="images/facebook.svg"
+              alt="フェイスブック" /></a>
+          <a href="" class="mobile-menu__content__item__link" tabindex="-1"><img src="images/instagram.svg"
+              alt="インスタグラム" /></a>
+          <a href="" class="mobile-menu__content__item__link" tabindex="-1"><img src="images/twitter.svg"
+              alt="ツイッター" /></a>
+        </li>
+      </ul>
+      <button class="mobile-menu__close-btn" tabindex="-1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <section class="hero">
+      <div class="hero__inner">
+        <img src="images/hero-logo.svg" alt="ロゴ" class="hero__inner__logo" />
+        <picture class="hero__inner__scroll">
+          <source srcset="images/scroll-pc.svg" media="(min-width: 767px)" type="image/svg" />
+          <img src="images/scroll-sp.svg" alt="スクロール">
+        </picture>
+      </div>
+    </section>
+    <section class="formosa">
+      <div class="formosa__inner">
+        <div class="formosa__bg1">
+          <div class="formosa__bg1__inner">
+            <div class="formosa__bg1__inner__box">
+              <div class="formosa__bg1__inner__box__wrapper">
+                <figure class="formosa__bg1__inner__box__wrapper__logo">
+                  <img src="images/icontaiwan.svg" alt="台湾アイコン" />
+                </figure>
+                <div class="formosa__bg1__inner__box__wrapper__texts">
+                  Formosa<br />
+                  <span class="formosa__bg1__inner__box__wrapper__texts__subtitle">フォルモサ</span>
+                  <span class="formosa__bg1__inner__box__wrapper__texts__subtitle">（麗しの島）</span>
+                </div>
+                <span class="formosa__bg1__inner__box__wrapper__border"></span>
+              </div>
+              <div class="formosa__bg1__inner__box__img">
+                <picture>
+                  <source srcset="images/formosa-img-1.jpg" alt="フォルモサ1" media="(min-width: 768px)" type="image/jpg" />
+                  <img src="images/formosa-img1-sp.jpg" alt="フォルモサ1" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formosa__bg2">
+          <div class="formosa__bg2__inner">
+            <div class="formosa__bg2__inner__box">
+              <div class="formosa__bg2__inner__box__texts">
+                フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風
+                景が、あなたを桃源郷の世界へといざなってくれるでしょう。
+              </div>
+              <div class="formosa__bg2__inner__box__img">
+                <picture>
+                  <source srcset="images/formosa-img-2.jpg" alt="フォルモサ2" media="(min-width: 768px)" type="image/jpg" />
+                  <img src="images/formosa-img2-sp.jpg" alt="フォルモサ2" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery__inner">
+        <div class="gallery__inner__title">
+          Gallery<span>ギャラリー</span>
+        </div>
+      </div>
+      <span class="gallery__inner__line"></span>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide">
+            <div class="swiper-slide-box">
+              <img src="images/gallery-slider-1.jpg" alt="塔と竜" />
+            </div>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="swiper-slide-box">
+              <img src="images/gallery-slider-2.jpg" alt="" />
+            </div>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="swiper-slide-box">
+              <img src="images/gallery-slider-3.jpg" alt="" />
+            </div>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="swiper-slide-box">
+              <img src="images/gallery-slider-4.jpg" alt="" />
+            </div>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="swiper-slide-box">
+              <img src="images/gallery-slider-5.jpg" alt="" />
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="travel">
+      <div class="travel__inner">
+        <div class="travel__inner__title">
+          Travel<span>おすすめスポット</span>
+        </div>
+        <div class="travel__inner__wrapper">
+          <div class="travel__inner__wrapper__main">
+            <p class="travel__inner__wrapper__main__text">
+              訪れた人々を魅了する「美麗島」。そんな台湾の人気スポットを代表する地を3つのエリアでご紹介。様々な風景に誰もが魅了されます。
+            </p>
+            <div class="travel__inner__wrapper__main__onlypc">
+              <img src="images/travel-rectangle 21.jpg" alt="写真1" />
+              <img src="images/travel-rectangle 22.jpg" alt="写真2" />
+            </div>
+
+            <div class="travel__inner__wrapper__main__onlypc">
+              <img src="images/travel-rectangle 24.jpg" alt="写真3" />
+              <img src="images/travel-rectangle 23.jpg" alt="写真4" />
+            </div>
+          </div>
+          <figure class="travel__inner__wrapper__img">
+            <img src="images/map.svg" class="travel__inner__wrapper__img__map" alt="地図" />
+            <a href="../taipei/index.html"><img src="images/map-pin.svg" class="travel__inner__wrapper__img__pin1"
+                alt="マップピン" /></a>
+            <a href="../taichung/index.html"><img src="images/map-pin.svg" class="travel__inner__wrapper__img__pin2"
+                alt="マップピン" /></a>
+            <a href="../tainan/index.html"><img src="images/map-pin.svg" class="travel__inner__wrapper__img__pin3"
+                alt="マップピン" /></a>
+            <a href="../taichung/index.html"><img src="images/taichu.svg" class="travel__inner__wrapper__img__taichu"
+                alt="台中" /></a>
+            <a href="../tainan/index.html"><img src="images/tainan.svg" class="travel__inner__wrapper__img__tainan"
+                alt="台南" /></a>
+            <a href="../taipei/index.html"><img src="images/taipei.svg" class="travel__inner__wrapper__img__taipei"
+                alt="台北" /></a>
+            <img src="images/flag.svg" class="travel__inner__wrapper__img__flag" alt="旗" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <div class="event__inner">
+        <div class="event__inner__title">
+          Event<span>おすすめイベント</span>
+        </div>
+        <div class="event__inner__item1">
+          <figure class="event__inner__img">
+            <picture>
+              <source srcset="images/event-img-1.jpg" media="(min-width: 767px)" type="image/png" />
+              <img src="images/event-img-1-pc.jpg" alt="”ランタンフェスティバル”" />
+            </picture>
+          </figure>
+          <div class="event__inner__texts">
+            <h3 class="event__inner__texts__title1">
+              台湾ランタンフェスティバル
+            </h3>
+            <p class="event__inner__texts__date">
+              <span>開催期間</span><span>春節</span><span>旧暦元日</span><br />
+              (2024年2月24日〜3月2日予定)
+            </p>
+            <p class="event__inner__texts__description">
+              春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式。吉祥や邪気払いの意味がある
+            </p>
+          </div>
+        </div>
+        <span class="event__inner__border"></span>
+        <div class="event__inner__item2">
+          <figure class="event__inner__img2">
+            <img src="images/event-img-2.jpg" alt="" class="event2__inner__img" />
+          </figure>
+          <div class="event__inner__texts">
+            <h3 class="event__inner__texts__title2">
+              台北最High新年城<br />
+              カウントダウンパーティー
+            </h3>
+            <p class="event__inner__texts__date2">
+              <span>開催期間</span><br />
+              12月31日~1月1日
+            </p>
+            <p class="event__inner__texts__description2">
+              台北101では毎年、新年を祝う花火を実施。
+              元旦0時から約3分間台北101を覆い尽くすように、
+              ビル全体から美しい火花が舞い散る。
+            </p>
+          </div>
+        </div>
+        <span class="event__inner__border"></span>
+        <div class="event__inner__info">
+          <div class="event__inner__info__content">
+            <h3 class="event__inner__info__content__title">台湾基本情報</h3>
+            <ul class="event__inner__info__content__list">
+              <div class="event__inner__info__content__list__wrqpper">
+                <li class="event__inner__info__content__list__item">
+                  ■正式名称：中華民国・台湾
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  Republic of China,Taiwan
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■首都：台北
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■人口：約2,300万人
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■面積：約3万6,000㎢
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■人種・民族：漢民族、先住民
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■宗教：仏教、道教、キリスト教、その他
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■言語：北京語、台湾語
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■通貨：元（ニュー台湾ドル）
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■時差：1時間 台湾が正午の時、日本は午後1時
+                </li>
+              </div>
+              <div class="event__inner__info__content__list__wrapper">
+                <li class="event__inner__info__content__list__item">
+                  ■台湾の気候・服装
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■亜熱帯に属し1年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大気性気候の影響を受けて冷え込むこともあるなど、地域差を頭に入れて服装の準備を。
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■台湾の祝日日
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■正月1月1日
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■端午節※：6月22日■春節※：1月20日~29日
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■中秋節※：9月29日■平和記念日：2月28日
+                </li>
+                <li class="event__inner__info__content__list__item">
+                  ■国慶節：10月10日■清明節：4月5日
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="page-top-btn">
+      <img src="images/page-top-sp.svg" alt="ページトップボタン" />
+    </div>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="index.html"><img src="images/mobile-logo.svg" alt="ロゴ" /></a>
+      </div>
+      <div class="footer__sns">
+        <img src="images/facebook.svg" alt="フェイスブック" />
+        <img src="images/instagram.svg" alt="インスタグラム" />
+        <img src="images/twitter.svg" alt="ツイッター" />
+      </div>
+      <div class="footer__copyright">Copyright (C) 2023 TAIWAN</div>
+    </footer>
+  </div>
+  <script src="js/vendors/swiper-bundle.min.js"></script>
+  <script src="js/libs/hero-slider.js"></script>
+  <script src="../common/js/libs/page-top-btn.js"></script>
+  <script src="../common/js/libs/scroll.js"></script>
+  <script src="../common/js/libs/mobile-menu-drop.js"></script>
+  <script src="js/top.js" defer></script>
+</body>
+
+</html>
